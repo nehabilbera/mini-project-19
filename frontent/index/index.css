@@ -1,0 +1,324 @@
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+               height:100vh;
+               width:100vw;
+               background-color:white;     
+               overflow:auto;
+        }
+       
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        header{
+            background-color:#3db7ef;
+            display: flex;
+            justify-content: space-between;
+            width: 100vw;
+            align-items: center;
+            
+        }
+        .header{
+            display: flex;
+            flex-direction: row;
+            gap:100px;
+            align-items: center;
+        }
+        .logo{
+            margin-left:5vw;
+            float:left;
+        }
+        img{
+            height:100px;
+            width:70px;
+        }
+       
+
+        .name{
+            display: flex;
+            flex-direction: column;
+              margin-top:50px;
+              justify-content: center;
+              align-items: center;
+        }
+        .college_name{
+            color: white;
+            font-family: 'Julius Sans One', sans-serif;
+            font-weight: 800;
+            font-size: 1.8vw;
+            text-align: center;
+            line-height: 2vw;
+        }
+        .inner_name{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            font-size: 1.5vw;
+            gap:5px;
+            
+        }
+        #dean_office{
+            color:white;
+            font-weight: bold;
+        }
+        #mail{
+            color:black;
+            font-weight:bold;
+        }
+        
+
+        main{
+            margin-top:200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media (max-width:600px)
+        {
+            nav{
+                   height: 150px;
+            }
+            img{
+                height:35vh;
+                width:20vw;
+            }
+            .header{
+                display: flex;
+                flex-direction:row;
+                /*align-items: center;*/
+                gap:15px;
+                
+            }
+            .name{
+                height:100vh;
+                display: flex;
+                flex-direction: column;
+                margin-top:0;
+                gap:5px;
+            }
+            .college_name{
+             padding-top: 3.5vw;
+             color: white;
+             font-family: 'Julius Sans One', sans-serif;
+            font-weight: 800;
+            font-size: 4vw;
+            text-align: center;
+            line-height: 5vw;
+            }
+
+            .inner_name{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #dean_office{
+                color:white;
+                font-size:2.5vw;
+                font-weight: bold;
+            }
+            
+            #mail{
+            color:black;
+            font-size:2.4vw;
+            font-weight:bold;
+        }
+        
+        }
+       
+        @media (min-width:600px) and (max-width:700px)
+        {
+            .logo{
+                margin-left:20px;
+            }   
+            img{
+                height:80px;
+                width: 65px;
+            } 
+            .header{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap:25px;
+            }
+            .college_name{
+                color:white;
+                font-size:13px;
+                font-weight: 800;
+                font-family: 'Julius Sans One', sans-serif;
+         }
+            .inner_name{
+             display: flex;
+             justify-content: center;
+             flex-direction: row;
+             align-items: center;
+              
+         }
+            #dean_office{
+             color:white;
+             font-size:2vw;
+             font-weight: bold;
+         }
+             #mail{
+             color:black;
+             font-size:2vw;
+             font-weight:bold;
+         }
+        }
+        
+        .navbar {
+             display: flex;
+            justify-content: space-around;
+            background-color:rgb(54, 6, 99);
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          
+          .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          
+          .dropdown {
+            float: left;
+            overflow: hidden;
+          }
+          
+          .dropdown .dropbtn {
+            cursor: pointer;
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+          }
+          
+          /* .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+            background-color: red;
+          } */
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+          }
+          
+          .dropdown-content a:hover {
+            background-color: #ddd;
+          }
+          
+          .show {
+            display: block;
+          }
+          
+          .text{
+            align-items: center;
+            height: 100px;
+            color:black;
+          }
+         
+           
+           
+          .navbar2 {
+            /* display: hidden; */
+            display: flex;
+            /* display: none; */
+            justify-content: space-around;
+            
+            background-color:rgb(54, 6, 99);
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          
+          .navbar2 a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          
+          .dropdown2 {
+            float: left;
+            overflow: hidden;
+          }
+          
+          .dropdown2 .dropbtn2 {
+            cursor: pointer;
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+          }
+          
+          /* .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+            background-color: red;
+          } */
+          
+          .dropdown-content2 {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          .dropdown-content2 a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+          }
+          
+          .dropdown-content2 a:hover {
+            background-color: #ddd;
+          }
+          
+          .show2 {
+            display: block;
+          }
+          #menubtn{
+            height:50px;
+            width: 50px;
+            
+          }
+          @media (max-width:500px)
+           {
+            .navbar{
+                display:none;
+            }
+            .navbar2{
+                display: block;
+            }
+           }
